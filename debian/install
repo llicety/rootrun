@@ -1,0 +1,6 @@
+rootrun-daemon/conf/zx.rootrun.rootrundaemon.conf /etc/dbus-1/system.d/
+rootrun-daemon/conf/zx.rootrun.rootrundaemon.service /usr/share/dbus-1/system-services/
+rootrun-daemon/rootrundbusdaemon.py /usr/share/rootrun/rootrun-daemon/
+rootrun-daemon/startrootrundbusdaemon.py /usr/share/rootrun/rootrun-daemon/
+rootrun.py /usr/share/rootrun/
+rootrun /usr/bin/

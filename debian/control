@@ -1,0 +1,11 @@
+Source: rootrun
+Section: utils
+Priority: optional
+Maintainer: zhangxin <zhangxin@ubuntukylin.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: rootrun
+Architecture: all
+Depends: ${misc:Depends}
+Description: Ordinary user can run command with root privilege use this command without sudo or su to root 

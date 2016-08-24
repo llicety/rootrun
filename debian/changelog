@@ -1,0 +1,5 @@
+rootrun (0.1.0) xenial; urgency=medium
+
+  * 第一个版本，普通用户用root权限去执行命令
+
+ -- zhangxin (ubuntukylin team) <zhangxin@ubuntukylin.com>  Tue, 23 Aug 2016 15:26:09 +0800

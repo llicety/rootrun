@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+    PKILL=$(which pkill)
+    PGREP=$(which pgrep)
+    FLAG=`$PGREP -f /usr/share/rootrun/rootrun-daemon/startrootrundbusdaemon.py`
+    if [ -n "$FLAG" ] ; then
+        $PKILL -f -9 /usr/share/rootrun/rootrun-daemon/startrootrundbusdaemon.py
+    fi
+fi
+

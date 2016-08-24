@@ -1,0 +1,20 @@
+#!/bin/sh
+if [ "$1" = "--help" ];then
+    echo "    -----------------rootrun-------------------"
+    echo " "
+    echo "    rootrun 是一个简单的免用户输入密码就可以拥有root权限去执行命令的工具"
+    echo "    但是他不能执行具有图形界面的命令"
+    echo "    正确执行样例：rootrun touch /var/test"
+    echo "    错误执行样例：rootrun vim /var/test"
+    echo "    意见和建议发送邮件到 zhangxin@ubuntukylin.com,谢谢！"
+    echo " "
+    exit 0
+fi
+
+cd /usr/share/rootrun
+
+if [ -n "$*" ]; then
+
+    python rootrun.py $*
+
+fi

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ "$1" = "remove" -o "$1" = "deconfigure" ]; then
+    PKILL=$(which pkill)
+    PGREP=$(which pgrep)
+    FLAG=`$PGREP -f /usr/share/rootrun/rootrun-daemon/startrootrundbusdaemon.py`
+    if [ -n "$FLAG" ] ; then
+        $PKILL -f -9 /usr/share/rootrun/rootrun-daemon/startrootrundbusdaemon.py
+    fi
+fi
+

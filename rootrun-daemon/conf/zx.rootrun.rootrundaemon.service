@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=zx.rootrun.rootrundaemon
+Exec=/usr/share/rootrun/rootrun-daemon/startrootrundbusdaemon.py
+User=root
