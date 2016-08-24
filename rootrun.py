@@ -39,7 +39,7 @@ def rootRun(cmd):
 if __name__ == "__main__":
     cmd = sys.argv[1:]
     cmd = " ".join(cmd)
-    print "执行命令:",cmd 
+    print "The runing command is: ",cmd 
 
     rootRun(cmd)
 
